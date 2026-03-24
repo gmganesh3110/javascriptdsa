@@ -11,6 +11,8 @@ function reverse(str) {
 
 console.log(reverse("ganesh"));
 
+// I will iterate through the string from the end to the beginning and build a new string by appending each character to it. If the input string is empty, null, or undefined, I will return undefined.
+
 // Time complexity: O(n) where n is the length of the string
 // Space complexity: O(n) where n is the length of the string (for the reversed string)
 
@@ -23,3 +25,13 @@ console.log(reverse("ganesh"));
 
 // Time complexity: O(n) where n is the length of the string
 // Space complexity: O(n) where n is the length of the string (for the reversed string)
+
+// Edge cases:
+console.log(reverse("")); // Output: undefined
+console.log(reverse(null)); // Output: undefined
+console.log(reverse(undefined)); // Output: undefined
+console.log(reverse("a")); // Output: "a"
+console.log(reverse("ab")); // Output: "ba"
+console.log(reverse("abc")); // Output: "cba"
+
+//
