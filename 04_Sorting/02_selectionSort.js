@@ -11,9 +11,11 @@ function selectionSort(arr) {
         lowest = j;
       }
     }
-    let temp = arr[i];
-    arr[i] = arr[lowest];
-    arr[lowest] = temp;
+    if (i != lowest) {
+      let temp = arr[i];
+      arr[i] = arr[lowest];
+      arr[lowest] = temp;
+    }
   }
   return arr;
 }
@@ -30,6 +32,3 @@ console.log(selectionSort([43, 23, 35, 76, 767, 84, 23, 65, 75, 43, 65]));
 // 3. Duplicate Elements: The algorithm should handle duplicate elements correctly and maintain their relative order in the sorted output.
 // 4. Already Sorted Array: If the input array is already sorted, the algorithm should still work correctly and return the sorted array without making unnecessary swaps.
 // 5. Reverse Sorted Array: If the input array is sorted in reverse order, the algorithm should still sort it correctly, although it will require the maximum number of comparisons and swaps.
-
-
- 
