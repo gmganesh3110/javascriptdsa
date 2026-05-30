@@ -8,12 +8,12 @@ function secondLargest(arr) {
     let second = -Infinity;
 
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > largest) {
-            second = largest
+        if (arr[i] > largest && arr[i] !== largest) {
+            second = largest;
             largest = arr[i];
         }
-        if (arr[i] < largest && arr[i] > second) {
-            second = arr[i]
+        if (arr[i] < largest && arr[i] > second && arr[i] !== second) {
+            second = arr[i];
         }
     }
     return second;
