@@ -18,4 +18,4 @@ function secondLargest(arr) {
     }
     return second;
 }
-console.log(secondLargest([1, 2, 3, 2, 44, 5, 5, 55, 4, 33, 2, 3]), "Second")
+console.log(secondLargest([1, 2, 3, 2, 44, 5, 5, 55, 4, 33, 2, 3]), "Second")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
