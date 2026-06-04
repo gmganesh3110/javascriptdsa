@@ -52,3 +52,4 @@ function binarySearchRecursive(arr, num, left = 0, right = arr.length - 1) {
     return binarySearchRecursive(arr, num, left, middle - 1);
   return binarySearchRecursive(arr, num, middle + 1, right);
 }
+   
