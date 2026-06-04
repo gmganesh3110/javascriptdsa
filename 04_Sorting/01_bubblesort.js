@@ -11,25 +11,25 @@
 //
 // After each pass, the largest element from the unsorted portion is moved to its correct position.
 
-function bubbleSort(arr){
+function bubbleSort(arr) {
 
-  for(let i = arr.length; i > 0; i--){
-    let noswap=true;
-	for(let j = 0; j < i - 1; j++){
-      if(arr[j] > arr[j + 1]){
+  for (let i = arr.length; i > 0; i--) {
+    let noswap = true;
+    for (let j = 0; j < i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
         // SWAP
         let temp = arr[j];
         arr[j] = arr[j + 1];
         arr[j + 1] = temp;
-		noswap=false;
+        noswap = false;
       }
     }
-	if(noswap) break;
+    if (noswap) break;
   }
   return arr;
 }
 
-console.log(bubbleSort([37,45,28,7]));
+console.log(bubbleSort([37, 45, 28, 7]));
 
 // Output: [7, 28, 37, 45]
 
