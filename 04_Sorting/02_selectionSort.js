@@ -12,7 +12,7 @@ function selectionSort(arr) {
       }
     }
     if (i != lowest) {
-      let temp = arr[i];      
+      let temp = arr[i];
       arr[i] = arr[lowest];
       arr[lowest] = temp;
     }
