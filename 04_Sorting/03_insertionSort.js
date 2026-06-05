@@ -13,13 +13,13 @@
 // 6. Repeat until the array is sorted.
 
 
-function insertionSort(arr){
-  for(let i = 1; i < arr.length; i++){
+function insertionSort(arr) {
+  for (let i = 1; i < arr.length; i++) {
     let currentVal = arr[i];
     let j = i - 1;
 
     // Shift elements that are greater than currentVal
-    while(j >= 0 && arr[j] > currentVal){
+    while (j >= 0 && arr[j] > currentVal) {
       arr[j + 1] = arr[j];
       j--;
     }
@@ -27,13 +27,13 @@ function insertionSort(arr){
     // Place currentVal at the correct position
     arr[j + 1] = currentVal;
   }
-  
+
   return arr;
 }
 
 
 // Test cases
-console.log(insertionSort([1,3,6,3,2,1,6,7,54,3,6,1,4,75,3]));
+console.log(insertionSort([1, 3, 6, 3, 2, 1, 6, 7, 54, 3, 6, 1, 4, 75, 3]));
 // Output: [1, 1, 1, 2, 3, 3, 3, 3, 4, 6, 6, 6, 7, 54, 75]
 
 console.log(insertionSort([5, 4, 3, 2, 1]));
