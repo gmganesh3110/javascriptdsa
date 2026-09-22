@@ -20,3 +20,4 @@ function sortedSquarredArray2(array) {
 }
 
 console.log(sortedSquarredArray2(arr));
+ 
